@@ -1,0 +1,28 @@
+services:
+  esphome:
+    container_name: esphome
+    hostname: esphome
+    # user: 1000:1000
+    image: esphome/esphome
+    environment:
+      - TZ=Europe/Amsterdam
+      - ESPHOME_DASHBOARD_USE_PING=true
+    volumes:
+      - ./data/:/config
+      - /etc/localtime:/etc/localtime:ro
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.esphome.rule=Host(`esphome.huis.wtf`)
+      - traefik.http.services.esphome.loadbalancer.server.port=6052
+      - traefik.http.routers.esphome.middlewares=auth@file
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    networks:
+      - traefik
+    restart: unless-stopped
+
+networks:
+  traefik:
+    external: true

@@ -1,0 +1,54 @@
+cover:
+  - platform: template
+    covers:
+      livingroom_window_safe:
+        device_class: blind
+        position_template: "{{ (state_attr('cover.livingroom_window_blind', 'current_position') | int - 20) / 80 * 100 }}"
+        set_cover_position:
+          service: cover.set_cover_position
+          data:
+            position: "{{ (position * 0.8) + 20 }}"
+          target:
+            entity_id: cover.livingroom_window_blind
+        tilt_template: "{{ state_attr('cover.livingroom_window_blind', 'current_tilt_position') }}"
+        set_cover_tilt_position:
+          service: cover.set_cover_tilt_position
+          data:
+            tilt_position: "{{ tilt }}"
+          target:
+            entity_id: cover.livingroom_window_blind
+
+      livingroom_door_safe:
+        device_class: blind
+        position_template: "{{ (state_attr('cover.livingroom_door_blind', 'current_position') | int - 20) / 80 * 100 }}"
+        set_cover_position:
+          service: cover.set_cover_position
+          data:
+            position: "{{ (position * 0.8) + 20 }}"
+          target:
+            entity_id: cover.livingroom_door_blind
+        tilt_template: "{{ state_attr('cover.livingroom_door_blind', 'current_tilt_position') }}"
+        set_cover_tilt_position:
+          service: cover.set_cover_tilt_position
+          data:
+            tilt_position: "{{ tilt }}"
+          target:
+            entity_id: cover.livingroom_door_blind
+
+      kitchen_window_safe:
+        device_class: blind
+        position_template: "{{ (state_attr('cover.kitchen_window_blind', 'current_position') | int - 20) / 80 * 100 }}"
+        set_cover_position:
+          service: cover.set_cover_position
+          data:
+            position: "{{ (position * 0.8) + 20 }}"
+          target:
+            entity_id: cover.kitchen_window_blind
+        tilt_template: "{{ state_attr('cover.kitchen_window_blind', 'current_tilt_position') }}"
+        set_cover_tilt_position:
+          service: cover.set_cover_tilt_position
+          data:
+            tilt_position: "{{ tilt }}"
+          target:
+            entity_id: cover.kitchen_window_blind
+

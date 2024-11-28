@@ -1,0 +1,55 @@
+global:
+  checkNewVersion: false
+  sendAnonymousUsage: false
+
+api:
+  dashboard: true
+
+metrics:
+  prometheus:
+    addEntryPointsLabels: true
+    addRoutersLabels: true
+    addServicesLabels: true
+
+serversTransport:
+  insecureSkipVerify: true
+
+entryPoints:
+  http:
+    address: :80
+    http:
+      redirections:
+        entryPoint:
+          to: https
+          scheme: https
+
+  https:
+    address: :443
+    http:
+      tls:
+        certResolver: letsencrypt
+
+providers:
+  providersThrottleDuration: 10s
+
+  file:
+    watch: true
+    directory: /etc/traefik/configurations/
+
+  docker:
+    watch: true
+    network: traefik
+    exposedByDefault: false
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      storage: /etc/traefik/acme.json
+      httpChallenge:
+        entryPoint: http
+
+accessLog:
+  format: json
+
+log:
+  format: json

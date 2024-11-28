@@ -1,0 +1,27 @@
+services:
+  files:
+    container_name: files
+    hostname: files
+    image: nginx:latest
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8080:8080 # Nginx server - used for internal access
+    volumes:
+      - ./data/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ../../public/:/files/:ro
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.files.rule=Host(`files.huis.wtf`)
+      - traefik.http.services.files.loadbalancer.server.port=8080
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    networks:
+      - traefik
+    restart: unless-stopped
+
+networks:
+  traefik:
+    external: true

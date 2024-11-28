@@ -1,0 +1,159 @@
+esphome:
+  name: esphome-utility-meter
+
+esp8266:
+  board: esp01_1m
+  restore_from_flash: True
+
+logger:
+
+ota:
+  password: !secret utility_meter_ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  ap:
+    ssid: 'ESPHOME UTILITY METER'
+    password: !secret wifi_ap_password
+
+  use_address: !secret utility_meter_wifi_use_address
+
+captive_portal:
+
+api:
+  encryption:
+    key: !secret utility_meter_api_encryption_key
+
+  services:
+    - service: set_water_meter_value
+      variables:
+        value: float
+      then:
+        - globals.set:
+            id: water_meter_value
+            value: !lambda 'return value;'
+        - globals.set:
+            id: water_meter_pulses
+            value: '0'
+
+globals:
+  - id: water_meter_value
+    type: float
+    restore_value: yes
+    initial_value: '0'
+  - id: water_meter_pulses
+    type: int
+    restore_value: yes
+
+text_sensor:
+  - platform: dsmr
+    identification:
+      name: 'DSMR Identification'
+    p1_version:
+      name: 'DSMR Version'
+
+# binary_sensor:
+#   - platform: gpio
+#     id: water_meter_pulse_sensor
+#     name: Water meter pulse sensor
+#     internal: False
+#     pin:
+#       number: GPIO12
+#       inverted: true
+#       mode:
+#         input: true
+#     on_press:
+#       - then:
+#           lambda: id(water_meter_pulses) += 1;
+
+sensor:
+  - platform: pulse_counter
+    pin: GPIO12
+    id: water_meter_pulse
+    name: Water meter pulse
+    state_class: measurement
+    unit_of_measurement: 'l/min'
+    accuracy_decimals: 1
+    icon: 'mdi:water-pump'
+    filters:
+      lambda: return x;
+
+    total:
+      id: water_meter_pulse_total
+      name: Water meter pulse total
+      unit_of_measurement: 'm³'
+      state_class: total_increasing
+      device_class: water
+      accuracy_decimals: 3
+      filters:
+        lambda: return x * 0.001;
+
+  - platform: template
+    id: water_meter_total
+    name: Water meter total
+    state_class: 'total_increasing'
+    device_class: water
+    icon: mdi:water
+    unit_of_measurement: 'm³'
+    accuracy_decimals: 3
+    lambda: return id(water_meter_value) + (id(water_meter_pulses) * 0.001);
+
+  - platform: template
+    id: water_meter_pulses_total
+    name: Water meter pulses total
+    state_class: 'total_increasing'
+    accuracy_decimals: 0
+    lambda: return id(water_meter_pulses);
+    internal: True
+
+  - platform: dsmr
+    energy_delivered_tariff1:
+      name: 'Energy Consumed Tariff 1'
+    energy_delivered_tariff2:
+      name: 'Energy Consumed Tariff 2'
+    energy_returned_tariff1:
+      name: 'Energy Produced Tariff 1'
+    energy_returned_tariff2:
+      name: 'Energy Produced Tariff 2'
+    power_delivered:
+      name: 'Power Consumed'
+    power_returned:
+      name: 'Power Produced'
+    electricity_failures:
+      name: 'Electricity Failures'
+    electricity_long_failures:
+      name: 'Long Electricity Failures'
+    voltage_l1:
+      name: 'Voltage Phase 1'
+    voltage_l2:
+      name: 'Voltage Phase 2'
+    voltage_l3:
+      name: 'Voltage Phase 3'
+    current_l1:
+      name: 'Current Phase 1'
+    current_l2:
+      name: 'Current Phase 2'
+    current_l3:
+      name: 'Current Phase 3'
+    power_delivered_l1:
+      name: 'Power Consumed Phase 1'
+    power_delivered_l2:
+      name: 'Power Consumed Phase 2'
+    power_delivered_l3:
+      name: 'Power Consumed Phase 3'
+    power_returned_l1:
+      name: 'Power Produced Phase 1'
+    power_returned_l2:
+      name: 'Power Produced Phase 2'
+    power_returned_l3:
+      name: 'Power Produced Phase 3'
+    gas_delivered:
+      name: 'Gas Consumed'
+
+uart:
+  rx_pin:
+    number: 3
+    inverted: true
+  baud_rate: 115200

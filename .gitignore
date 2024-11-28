@@ -1,0 +1,41 @@
+.env
+
+# Docker
+
+## Avahi
+
+## Esphome
+docker/esphome/data/.esphome/
+docker/esphome/data/secrets.yaml
+
+## Grafana
+docker/grafana/data/**
+!docker/grafana/data/.gitkeep
+
+## Homeassistant
+docker/homeassistant/data/.cache/
+docker/homeassistant/data/.cloud/
+docker/homeassistant/data/.config/
+docker/homeassistant/data/.storage/
+docker/homeassistant/data/custom_components/
+docker/homeassistant/data/home-assistant_v2.db
+docker/homeassistant/data/home-assistant.log*
+docker/homeassistant/data/secrets.yaml
+
+## Loki
+docker/loki/data/**
+!docker/loki/data/.gitkeep
+
+## Mqtt
+docker/mqtt/data/persistence/mosquitto.db
+docker/mqtt/data/passwordfile
+
+## Traefik
+docker/traefik/data/acme.json
+docker/traefik/data/htpasswd
+
+## Zigbee2mqtt
+docker/zigbee2mqtt/data/coordinator_backup.json
+docker/zigbee2mqtt/data/database.db
+docker/zigbee2mqtt/data/secrets.yaml
+docker/zigbee2mqtt/data/state.json

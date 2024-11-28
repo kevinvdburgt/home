@@ -1,0 +1,11 @@
+http:
+  routers:
+    proxmox:
+      rule: Host(`proxmox.huis.wtf`)
+      service: proxmox
+
+  services:
+    proxmox:
+      loadBalancer:
+        servers:
+          - url: "https://10.10.0.3:8006/"

@@ -1,0 +1,37 @@
+permit_join: false
+
+homeassistant: true
+
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://mqtt
+  user: '!secrets.yaml mqtt_user'
+  password: '!secrets.yaml mqtt_password'
+
+serial:
+  port: /dev/usb_zigbee
+
+frontend:
+  port: 8080
+  auth_token: '!secrets.yaml frontend_auth_token'
+
+availability:
+  active:
+    timeout: 10
+  passive:
+    timeout: 1500
+
+advanced:
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+  log_level: info
+  log_output:
+    - console
+
+devices: devices.yaml
+
+groups: groups.yaml
+
+device_options:
+  legacy: false

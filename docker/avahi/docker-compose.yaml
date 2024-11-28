@@ -1,0 +1,13 @@
+services:
+  avahi:
+    container_name: avahi
+    hostname: avahi
+    image: flungo/avahi:latest
+    network_mode: host
+    environment:
+      - REFLECTOR_ENABLE_REFLECTOR=yes
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    restart: unless-stopped

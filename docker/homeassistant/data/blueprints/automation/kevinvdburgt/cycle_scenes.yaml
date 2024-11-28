@@ -1,0 +1,57 @@
+blueprint:
+  name: Cycle scenes
+  description: Cycles through scenes
+  domain: automation
+  source_url: https://github.com/kevinvdburgt/home
+  author: Kevin van der Burgt
+  input:
+    trigger:
+      name: Trigger
+      selector:
+        trigger: {}
+
+    scenes:
+      name: Scenes
+      selector:
+        entity:
+          domain: scene
+          multiple: true
+
+    counter:
+      name: Helper cycle counter
+      description: Homeassistant doesnt have the ability to create state per automation. You'll need to create a helper counter to keep track on which scene is active.
+      selector:
+        entity:
+          filter:
+            domain: counter
+
+mode: single
+
+trigger: !input trigger
+
+variables:
+  scenes: !input scenes
+  counter: !input counter
+
+action:
+  - if:
+    - condition: template
+      value_template: "{{ states(counter) | int >= scenes | count }}"
+    then:
+      - service: counter.set_value
+        target:
+          entity_id: "{{ counter }}"
+        data:
+          value: 1
+    else:
+      - service: counter.increment
+        target:
+          entity_id: "{{ counter }}"
+
+  - if:
+    - condition: template
+      value_template: "{{ states(counter) | int > 0 }}"
+    then:
+      - service: scene.turn_on
+        target:
+          entity_id: "{{ scenes[(states(counter) | int) - 1] }}"

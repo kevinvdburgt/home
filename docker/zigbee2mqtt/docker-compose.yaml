@@ -1,0 +1,31 @@
+services:
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    hostname: zigbee2mqtt
+    user: 1000:1000
+    image: koenkk/zigbee2mqtt:latest
+    environment:
+      - TZ=Europe/Amsterdam
+    volumes:
+      - ./data/:/app/data/
+      - /run/udev/:/run/udev/:ro
+    devices:
+      - /dev/usb_zigbee:/dev/usb_zigbee
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.zigbee2mqtt.rule=Host(`zigbee.huis.wtf`)
+      - traefik.http.services.zigbee2mqtt.loadbalancer.server.port=8080
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    restart: unless-stopped
+    networks:
+      - traefik
+      - mqtt
+
+networks:
+  traefik:
+    external: true
+  mqtt:
+    external: true

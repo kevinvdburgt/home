@@ -1,0 +1,227 @@
+- id: '1732540136275'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 1fa936152b36998a0b43c951706ff022
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.office_light_ceiling_up
+      - light.office_light_ceiling_down
+      counter: counter.office_scene_cycle_counter
+- id: '1732541249389'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 9ba4cb043529f6ee7a32b4e8a84c3ed6
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.bathroom_light_ceiling
+- id: '1732541472220'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 8dae26efd1c68ec975988ad15ce355d8
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.kitchen_light_cupboard
+      - light.kitchen_light_ceiling_1
+      - light.kitchen_light_ceiling_2
+      - light.kitchen_light_cove_1
+      - light.kitchen_light_cove_2
+      - light.kitchen_light_cove_3
+      - light.kitchen_light_cove_4
+      - light.kitchen_light_cove_5
+      counter: counter.kitchen_scene_cycle_counter
+- id: '1732541695809'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 829f8898c4aa5eac9fb05b13d245ead0
+        type: action
+        subtype: on_press
+        trigger: device
+      - domain: mqtt
+        device_id: 24d16c48aec6b723307e7d746bfff06f
+        type: action
+        subtype: 'on'
+        trigger: device
+      - domain: mqtt
+        device_id: bc64115d3bc889a6407c8865e43b40fe
+        type: action
+        subtype: 'on'
+        trigger: device
+      lights:
+      - light.masterbedroom_light_bedside_jillian
+      - light.masterbedroom_light_bedside_kevin
+      - light.masterbedroom_light_ceiling_spot_bed
+      - light.masterbedroom_light_ceiling_spot_door
+      - light.masterbedroom_light_ceiling_spot_floor
+      - light.masterbedroom_light_ceiling_spot_wall
+- id: '1732541770705'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 35f682328b849b4a2b0f5a2f4a3dda5e
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.bedroom_light_ceiling
+      counter: counter.bedroom_scene_cycle_counter
+- id: '1732541842590'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 26e52ba75d07a8942d447364feb82f93
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.toilet_light_ceiling
+- id: '1732541926870'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 02442e91b3a44872c9c2972bbc1050c0
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.livingroom_light_ceiling
+      - light.group_livingroom_light_diningtable
+      - light.livingroom_light_floor
+- id: '1732541988598'
+  alias: Toggle all lights
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/toggle_all_lights.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 8c682999330268f1a09f8f8ed7c4f5d7
+        type: action
+        subtype: on_press
+        trigger: device
+      lights:
+      - light.backyard_light_wall
+- id: '1732553935886'
+  alias: Cycle scenes
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/cycle_scenes.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 1fa936152b36998a0b43c951706ff022
+        type: action
+        subtype: off_press
+        trigger: device
+      scenes:
+      - scene.office_smooth
+      - scene.office_red
+      counter: counter.office_scene_cycle_counter
+- id: '1732555069978'
+  alias: Cycle scenes
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/cycle_scenes.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 35f682328b849b4a2b0f5a2f4a3dda5e
+        type: action
+        subtype: off_press
+        trigger: device
+      scenes:
+      - scene.bedroom_smooth
+      counter: counter.bedroom_scene_cycle_counter
+- id: '1732631259068'
+  alias: Cycle scenes
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/cycle_scenes.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 8dae26efd1c68ec975988ad15ce355d8
+        type: action
+        subtype: off_press
+        trigger: device
+      scenes:
+      - scene.kitchen_smooth
+      - scene.kitchen_funny
+      counter: counter.kitchen_scene_cycle_counter
+- id: '1732631354875'
+  alias: Cycle scenes
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/cycle_scenes.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 02442e91b3a44872c9c2972bbc1050c0
+        type: action
+        subtype: off_press
+        trigger: device
+      scenes:
+      - scene.livingroom_smooth
+      counter: counter.livingroom_scene_cycle_counter
+- id: '1732631692660'
+  alias: Cycle scenes
+  description: ''
+  use_blueprint:
+    path: kevinvdburgt/cycle_scenes.yaml
+    input:
+      trigger:
+      - domain: mqtt
+        device_id: 829f8898c4aa5eac9fb05b13d245ead0
+        type: action
+        subtype: off_press
+        trigger: device
+      - domain: mqtt
+        device_id: bc64115d3bc889a6407c8865e43b40fe
+        type: action
+        subtype: 'on'
+        trigger: device
+      - domain: mqtt
+        device_id: 24d16c48aec6b723307e7d746bfff06f
+        type: action
+        subtype: 'off'
+        trigger: device
+      scenes:
+      - scene.masterbedroom_smooth
+      counter: counter.masterbedroom_scene_cycle_counter

@@ -1,0 +1,8 @@
+http:
+  middlewares:
+    auth:
+      basicAuth:
+        usersFile: "/etc/traefik/htpasswd"
+        realm: "Protected"
+        headerField: "X-BasicAuth-User"
+        removeHeader: true

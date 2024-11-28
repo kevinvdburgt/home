@@ -1,0 +1,1273 @@
+- id: '1732554285778'
+  name: Smooth
+  entities:
+    light.office_light_ceiling_down:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 26
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: office_light_ceiling_down
+      supported_features: 44
+      state: 'on'
+    light.office_light_ceiling_up:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 153
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: office_light_ceiling_up
+      supported_features: 44
+      state: 'on'
+  metadata: {}
+- id: '1732554320488'
+  name: Red
+  entities:
+    light.office_light_ceiling_down:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 26
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 1.22
+      - 96.471
+      rgb_color:
+      - 255
+      - 14
+      - 9
+      xy_color:
+      - 0.698
+      - 0.3
+      friendly_name: office_light_ceiling_down
+      supported_features: 44
+      state: 'on'
+    light.office_light_ceiling_up:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 355.546
+      - 89.804
+      rgb_color:
+      - 255
+      - 26
+      - 43
+      xy_color:
+      - 0.683
+      - 0.296
+      friendly_name: office_light_ceiling_up
+      supported_features: 44
+      state: 'on'
+  metadata: {}
+- id: '1732554899351'
+  name: Smooth
+  entities:
+    light.bedroom_light_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      - colorloop
+      - stop_colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 3
+      color_temp_kelvin: 2202
+      color_temp: 454
+      hs_color:
+      - 29.79
+      - 84.553
+      rgb_color:
+      - 255
+      - 146
+      - 39
+      xy_color:
+      - 0.579
+      - 0.388
+      friendly_name: bedroom_light_ceiling
+      supported_features: 44
+      state: 'on'
+  metadata: {}
+- id: '1732562081897'
+  name: Smooth
+  entities:
+    light.kitchen_light_ceiling_1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      - colorloop
+      - stop_colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: kitchen_light_ceiling_1
+      supported_features: 44
+      state: 'off'
+    light.kitchen_light_ceiling_2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      - colorloop
+      - stop_colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: kitchen_light_ceiling_2
+      supported_features: 44
+      state: unavailable
+    light.kitchen_light_cove_1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 76
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: kitchen_light_cove_1
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 76
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: kitchen_light_cove_2
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_3:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 76
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: kitchen_light_cove_3
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_4:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 76
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: kitchen_light_cove_4
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_5:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 76
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: kitchen_light_cove_5
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cupboard:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 26
+      friendly_name: kitchen_light_cupboard
+      supported_features: 44
+      state: 'on'
+  metadata: {}
+- id: '1732562182362'
+  name: Funny
+  entities:
+    light.kitchen_light_ceiling_1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      - colorloop
+      - stop_colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 281.328
+      - 94.51
+      rgb_color:
+      - 180
+      - 14
+      - 255
+      xy_color:
+      - 0.284
+      - 0.109
+      friendly_name: kitchen_light_ceiling_1
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_ceiling_2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      - colorloop
+      - stop_colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: kitchen_light_ceiling_2
+      supported_features: 44
+      state: unavailable
+    light.kitchen_light_cove_1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 231.282
+      - 91.765
+      rgb_color:
+      - 21
+      - 55
+      - 255
+      xy_color:
+      - 0.138
+      - 0.056
+      friendly_name: kitchen_light_cove_1
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 162.824
+      - 100
+      rgb_color:
+      - 0
+      - 255
+      - 182
+      xy_color:
+      - 0.158
+      - 0.475
+      friendly_name: kitchen_light_cove_2
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_3:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 113.647
+      - 100
+      rgb_color:
+      - 27
+      - 255
+      - 0
+      xy_color:
+      - 0.178
+      - 0.742
+      friendly_name: kitchen_light_cove_3
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_4:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 62.588
+      - 100
+      rgb_color:
+      - 244
+      - 255
+      - 0
+      xy_color:
+      - 0.432
+      - 0.527
+      friendly_name: kitchen_light_cove_4
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cove_5:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 321.992
+      - 98.431
+      rgb_color:
+      - 255
+      - 4
+      - 163
+      xy_color:
+      - 0.525
+      - 0.219
+      friendly_name: kitchen_light_cove_5
+      supported_features: 44
+      state: 'on'
+    light.kitchen_light_cupboard:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 26
+      friendly_name: kitchen_light_cupboard
+      supported_features: 44
+      state: 'on'
+  metadata: {}
+- id: '1732562382372'
+  name: Smooth
+  entities:
+    light.livingroom_light_ceiling:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      - colorloop
+      - stop_colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: livingroom_light_ceiling
+      supported_features: 44
+      state: 'off'
+    light.livingroom_light_floor:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - sunrise
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: xy
+      brightness: 64
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.589
+      - 0.329
+      friendly_name: livingroom_light_floor
+      supported_features: 44
+      state: 'on'
+    select.livingroom_light_floor_gradient_scene:
+      options:
+      - blossom
+      - crocus
+      - precious
+      - narcissa
+      - beginnings
+      - first_light
+      - horizon
+      - valley_dawn
+      - sunflare
+      - emerald_flutter
+      - memento
+      - resplendent
+      - scarlet_dream
+      - lovebirds
+      - smitten
+      - glitz_and_glam
+      - promise
+      - ruby_romance
+      - city_of_love
+      - honolulu
+      - savanna_sunset
+      - golden_pond
+      - runy_glow
+      - tropical_twilight
+      - miami
+      - cancun
+      - rio
+      - chinatown
+      - ibiza
+      - osaka
+      - tokyo
+      - motown
+      - fairfax
+      - galaxy
+      - starlight
+      - blood moon
+      - artic_aurora
+      - moonlight
+      - nebula
+      - sundown
+      - blue_lagoon
+      - palm_beach
+      - lake_placid
+      - mountain_breeze
+      - lake_mist
+      - ocean_dawn
+      - frosty_dawn
+      - sunday_morning
+      - emerald_isle
+      - spring_blossom
+      - midsummer_sun
+      - autumn_gold
+      - spring_lake
+      - winter_mountain
+      - midwinter
+      - amber_bloom
+      - lily
+      - painted_sky
+      - winter_beauty
+      - orange_fields
+      - forest_adventure
+      - blue_planet
+      - soho
+      - vapor_wave
+      - magneto
+      - tyrell
+      - disturbia
+      - hal
+      - golden_star
+      - under_the_tree
+      - silent_night
+      - rosy_sparkle
+      - festive_fun
+      - colour_burst
+      - crystalline
+      assumed_state: true
+      friendly_name: livingroom_light_floor Gradient scene
+      state: resplendent
+    light.livingroom_light_diningtable_1:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 51
+      friendly_name: livingroom_light_diningtable_1
+      supported_features: 44
+      state: 'on'
+    light.livingroom_light_diningtable_2:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 51
+      friendly_name: livingroom_light_diningtable_2
+      supported_features: 44
+      state: 'on'
+    light.livingroom_light_diningtable_3:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 51
+      friendly_name: livingroom_light_diningtable_3
+      supported_features: 44
+      state: 'on'
+  metadata: {}
+- id: '1732631582219'
+  name: Smooth
+  entities:
+    light.masterbedroom_light_bedside_jillian:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - sunrise
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 26
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: masterbedroom_light_bedside_jillian
+      supported_features: 44
+      state: 'on'
+    select.masterbedroom_light_bedside_jillian_gradient_scene:
+      options:
+      - blossom
+      - crocus
+      - precious
+      - narcissa
+      - beginnings
+      - first_light
+      - horizon
+      - valley_dawn
+      - sunflare
+      - emerald_flutter
+      - memento
+      - resplendent
+      - scarlet_dream
+      - lovebirds
+      - smitten
+      - glitz_and_glam
+      - promise
+      - ruby_romance
+      - city_of_love
+      - honolulu
+      - savanna_sunset
+      - golden_pond
+      - runy_glow
+      - tropical_twilight
+      - miami
+      - cancun
+      - rio
+      - chinatown
+      - ibiza
+      - osaka
+      - tokyo
+      - motown
+      - fairfax
+      - galaxy
+      - starlight
+      - blood moon
+      - artic_aurora
+      - moonlight
+      - nebula
+      - sundown
+      - blue_lagoon
+      - palm_beach
+      - lake_placid
+      - mountain_breeze
+      - lake_mist
+      - ocean_dawn
+      - frosty_dawn
+      - sunday_morning
+      - emerald_isle
+      - spring_blossom
+      - midsummer_sun
+      - autumn_gold
+      - spring_lake
+      - winter_mountain
+      - midwinter
+      - amber_bloom
+      - lily
+      - painted_sky
+      - winter_beauty
+      - orange_fields
+      - forest_adventure
+      - blue_planet
+      - soho
+      - vapor_wave
+      - magneto
+      - tyrell
+      - disturbia
+      - hal
+      - golden_star
+      - under_the_tree
+      - silent_night
+      - rosy_sparkle
+      - festive_fun
+      - colour_burst
+      - crystalline
+      assumed_state: true
+      friendly_name: masterbedroom_light_bedside_jillian Gradient scene
+      state: unknown
+    light.masterbedroom_light_bedside_kevin:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - sunrise
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 26
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: masterbedroom_light_bedside_kevin
+      supported_features: 44
+      state: 'on'
+    select.masterbedroom_light_bedside_kevin_gradient_scene:
+      options:
+      - blossom
+      - crocus
+      - precious
+      - narcissa
+      - beginnings
+      - first_light
+      - horizon
+      - valley_dawn
+      - sunflare
+      - emerald_flutter
+      - memento
+      - resplendent
+      - scarlet_dream
+      - lovebirds
+      - smitten
+      - glitz_and_glam
+      - promise
+      - ruby_romance
+      - city_of_love
+      - honolulu
+      - savanna_sunset
+      - golden_pond
+      - runy_glow
+      - tropical_twilight
+      - miami
+      - cancun
+      - rio
+      - chinatown
+      - ibiza
+      - osaka
+      - tokyo
+      - motown
+      - fairfax
+      - galaxy
+      - starlight
+      - blood moon
+      - artic_aurora
+      - moonlight
+      - nebula
+      - sundown
+      - blue_lagoon
+      - palm_beach
+      - lake_placid
+      - mountain_breeze
+      - lake_mist
+      - ocean_dawn
+      - frosty_dawn
+      - sunday_morning
+      - emerald_isle
+      - spring_blossom
+      - midsummer_sun
+      - autumn_gold
+      - spring_lake
+      - winter_mountain
+      - midwinter
+      - amber_bloom
+      - lily
+      - painted_sky
+      - winter_beauty
+      - orange_fields
+      - forest_adventure
+      - blue_planet
+      - soho
+      - vapor_wave
+      - magneto
+      - tyrell
+      - disturbia
+      - hal
+      - golden_star
+      - under_the_tree
+      - silent_night
+      - rosy_sparkle
+      - festive_fun
+      - colour_burst
+      - crystalline
+      assumed_state: true
+      friendly_name: masterbedroom_light_bedside_kevin Gradient scene
+      state: unknown
+    light.masterbedroom_light_ceiling_spot_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: masterbedroom_light_ceiling_spot_bed
+      supported_features: 44
+      state: 'off'
+    light.masterbedroom_light_ceiling_spot_door:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: masterbedroom_light_ceiling_spot_door
+      supported_features: 44
+      state: 'off'
+    light.masterbedroom_light_ceiling_spot_floor:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode: color_temp
+      brightness: 13
+      color_temp_kelvin: 2000
+      color_temp: 500
+      hs_color:
+      - 30.601
+      - 94.547
+      rgb_color:
+      - 255
+      - 136
+      - 13
+      xy_color:
+      - 0.599
+      - 0.382
+      friendly_name: masterbedroom_light_ceiling_spot_floor
+      supported_features: 44
+      state: 'on'
+    light.masterbedroom_light_ceiling_spot_wall:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - candle
+      - fireplace
+      - colorloop
+      - finish_effect
+      - stop_effect
+      - stop_hue_effect
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: masterbedroom_light_ceiling_spot_wall
+      supported_features: 44
+      state: 'off'
+  metadata: {}

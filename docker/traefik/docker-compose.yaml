@@ -1,0 +1,29 @@
+services:
+  traefik:
+    container_name: traefik
+    hostname: traefik
+    image: traefik:3.2
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./data/:/etc/traefik/
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.traefik.rule=Host(`traefik.huis.wtf`)
+      - traefik.http.routers.traefik.service=api@internal
+      - traefik.http.routers.traefik.middlewares=auth@file
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    restart: unless-stopped
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

@@ -1,0 +1,177 @@
+'0x001788010c68496e':
+  friendly_name: office_light_ceiling_down
+  transition: 0.5
+'0x001788010c684975':
+  friendly_name: office_light_ceiling_up
+  transition: 0
+'0xa4c1386cba1346a8':
+  friendly_name: kitchen_socket_catfeeder
+  state_action: true
+'0x00124b00246d7fd3':
+  friendly_name: stairway_2nd__motion__wall
+'0x001788010d194cbc':
+  friendly_name: hallway__light__ceiling
+'0x001788010d1eca71':
+  friendly_name: entrance_hallway__light__ceiling
+'0x001788010d194cb7':
+  friendly_name: toilet_light_ceiling
+'0x001788010cbcec7c':
+  friendly_name: frontyard__light__wall2
+'0x001788010d1ed51e':
+  friendly_name: bathroom_light_ceiling
+'0x00158d0008482b78':
+  friendly_name: bathroom_switch_door
+'0x003c84fffe662646':
+  friendly_name: bathroom_motion_wall
+'0x086bd7fffe5f1e1e':
+  friendly_name: office_light_showcase
+'0xcc86ecfffea01af8':
+  friendly_name: toilet_motion_wall
+'0x00158d0008378b6d':
+  friendly_name: toilet_switch_door
+'0x00158d000836e614':
+  friendly_name: entrance_hallway__switch__door
+'0xcc86ecfffea02c96':
+  friendly_name: entrance_hallway__motion__wall
+'0x00158d00083a69db':
+  friendly_name: inbetween_hallway__switch__door_entrance_hallway
+'0xec1bbdfffe9ef2b5':
+  friendly_name: livingroom_light_diningtable_1
+'0xec1bbdfffe437312':
+  friendly_name: livingroom_light_diningtable_2
+'0xec1bbdfffe9eec68':
+  friendly_name: livingroom_light_diningtable_3
+'0xccccccfffe9363d8':
+  friendly_name: livingroom_light_ceiling
+'0x04cf8cdf3c7973aa':
+  friendly_name: livingroom.switch.generic
+'0x3425b4fffe3cedb2':
+  friendly_name: stairway_1st__motion__wall
+'0x3425b4fffe13410a':
+  friendly_name: hallway__motion__wall
+'0x50325ffffec96f98':
+  friendly_name: kitchen_light_ceiling_1
+'0x50325ffffed24582':
+  friendly_name: kitchen_light_ceiling_2
+'0x003c84fffe164a2b':
+  friendly_name: kitchen_motion_wall
+'0x588e81fffe2993a1':
+  friendly_name: kitchen_light_cupboard
+'0xf0d1b800001e1eca':
+  friendly_name: pantry_light_wall
+'0x00158d00080745ee':
+  friendly_name: pantry_switch_door
+'0x00158d0008066cfa':
+  friendly_name: office_switch_window_kevin
+'0x00158d0008303d86':
+  friendly_name: office_switch_window_jillian
+'0x00158d0008378c18':
+  friendly_name: office_switch_door
+'0x00158d0008304112':
+  friendly_name: technical_room__switch__door
+'0x847127fffebc28ad':
+  friendly_name: technical_room__light__wall
+'0x00158d000854adba':
+  friendly_name: technical_room__switch__window
+'0x84fd27fffea4c295':
+  friendly_name: technical_room__motion__wall
+'0x00158d00084824fb':
+  friendly_name: masterbedroom_switch_door
+'0x3425b4fffe83c963':
+  friendly_name: masterbedroom_motion_wall
+'0x00158d000830423b':
+  friendly_name: masterbedroom_switch_window
+'0x00158d00080665bf':
+  friendly_name: livingroom_switch_door_inbetweenentrancehallway
+'0x00158d00083790aa':
+  friendly_name: livingroom_switch_door_backyard
+'0x00158d00083a69bf':
+  friendly_name: livingroom_switch_window
+'0x00158d000832fda9':
+  friendly_name: kitchen_switch_window
+'0x3425b4fffe5464fb':
+  friendly_name: office_motion_door
+'0x00158d000836e690':
+  friendly_name: bedroom_switch_door
+'0x00158d0008303e9b':
+  friendly_name: bedroom_switch_window
+'0x00124b0029350b4f':
+  friendly_name: technical_room__temperature_humidity__wall
+'0x00124b002a523121':
+  friendly_name: entrance_hallway__temperature_humidity__wall
+'0xdc8e95fffe89fb74':
+  friendly_name: kitchen_switch_catfeeder
+'0x003c84fffe41f54d':
+  friendly_name: masterbedroom_switch_bedside_kevin
+'0x003c84fffee35ac6':
+  friendly_name: masterbedroom_switch_bedside_jillian
+'0x00124b002a51c39c':
+  friendly_name: toilet_temperaturehumidity_wall
+'0xd0cf5efffedcae06':
+  friendly_name: shed__repeater__wall
+'0x00158d000830421a':
+  friendly_name: shed__switch__door
+'0x00124b002a51d3ec':
+  friendly_name: shed__temperature_humidity__wall
+'0x84ba20fffe7fd849':
+  friendly_name: attic_hallway__motion__wall
+'0x00124b002a4e3b54':
+  friendly_name: attic_hallway__temperature_humidity__wall
+'0x3425b4fffe3cedbb':
+  friendly_name: inbetween_hallway__motion__wall
+'0x3425b4fffe3cc903':
+  friendly_name: office_motion_desks
+'0x001788010cf94378':
+  friendly_name: kitchen_light_cove_4
+'0x001788010d4d6dd4':
+  friendly_name: kitchen_light_cove_2
+'0x001788010d53e3a3':
+  friendly_name: kitchen_light_cove_1
+'0x001788010d50dd20':
+  friendly_name: kitchen_light_cove_5
+'0x001788010be561fe':
+  friendly_name: livingroom_light_floor
+'0x001788010d4b1f49':
+  friendly_name: masterbedroom_light_ceiling_spot_wall
+'0x001788010d5527f6':
+  friendly_name: masterbedroom_light_ceiling_spot_bed
+'0x001788010d4b8e72':
+  friendly_name: masterbedroom_light_ceiling_spot_floor
+'0x001788010d4b8e4b':
+  friendly_name: masterbedroom_light_ceiling_spot_door
+'0x001788010c522bc3':
+  friendly_name: masterbedroom_light_bedside_kevin
+'0x001788010be5718e':
+  friendly_name: masterbedroom_light_bedside_jillian
+'0x001788010cf93feb':
+  friendly_name: kitchen_light_cove_3
+'0xf4b3b1fffe8b8986':
+  friendly_name: generic__socket__aux1
+'0x3425b4fffe1340f5':
+  friendly_name: livingroom_motion_wall
+'0x00158d000830e5ee':
+  friendly_name: loft__switch__stairs
+'0xf0d1b800001e0b3c':
+  friendly_name: attic_hallway__light__wall
+'0x3425b4fffe1340f0':
+  friendly_name: '0x3425b4fffe1340f0'
+'0x001788010d25f810':
+  friendly_name: masterbedroom_switch_wall
+'0x0017880109a75347':
+  friendly_name: livingroom_switch_wall_hallway
+'0x001788010d88c2f2':
+  friendly_name: kitchen_switch_wall
+'0x0017880109a80b47':
+  friendly_name: office_switch_wall
+'0x0017880109a75340':
+  friendly_name: bathroom_switch_wall
+'0x001788010e105ee9':
+  friendly_name: backyard_light_wall
+'0xa46dd4fffe4d6968':
+  friendly_name: bedroom_light_ceiling
+'0x001788010d29a085':
+  friendly_name: bedroom_switch_wall
+'0x001788010d2a1584':
+  friendly_name: toilet_switch_wall
+'0x001788010c294321':
+  friendly_name: livingroom_switch_wall_backyard

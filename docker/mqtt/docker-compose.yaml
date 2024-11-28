@@ -1,0 +1,25 @@
+services:
+  mqtt:
+    container_name: mqtt
+    hostname: mqtt
+    user: 1000:1000
+    image: eclipse-mosquitto:latest
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - 1883:1883 # Mqtt server - used for internal access
+    volumes:
+      - ./data/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./data/persistence/:/mosquitto/persistence/
+      - ./data/passwordfile:/mosquitto/config/passwordfile
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    restart: unless-stopped
+    networks:
+      - mqtt
+
+networks:
+  mqtt:
+    external: true

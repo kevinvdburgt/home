@@ -1,0 +1,19 @@
+homekit:
+  port: 21064
+  name: Homekit
+  advertise_ip: 10.10.0.2
+  filter:
+    include_entities:
+      # Office
+      - light.office_light_showcase
+
+      # Hallway
+      # - light.attic_hallway_light_wall
+
+      # Backyard
+      # - light.backyard_light_wall
+
+      # Bathroom
+      - light.bathroom_light_ceiling
+      # - binary_sensor.bathroom_motion_wall_occupancy
+      # - binary_sensor.bathroom_switch_door_contact

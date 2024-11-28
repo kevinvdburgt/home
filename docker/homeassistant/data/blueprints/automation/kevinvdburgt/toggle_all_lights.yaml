@@ -1,0 +1,64 @@
+blueprint:
+  name: Toggle all lights
+  description: Toggles all lights on with full brightness (when evertyhing is off) or off (when one ore more lights are on).
+  domain: automation
+  source_url: https://github.com/kevinvdburgt/home
+  author: Kevin van der Burgt
+  input:
+    trigger:
+      name: Trigger
+      selector:
+        trigger: {}
+
+    lights:
+      name: Lights
+      selector:
+        entity:
+          domain: light
+          multiple: true
+
+    counter:
+      name: Helper cycle counter
+      description: Will reset the scene cycle counter for the Cycle Scenes blueprint.
+      default: None
+      selector:
+        entity:
+          filter:
+            domain: counter
+
+mode: single
+
+trigger: !input trigger
+
+variables:
+  lights: !input lights
+  counter: !input counter
+
+action:
+  - if:
+    - condition: template
+      value_template: "{{ states.light | selectattr('entity_id', 'in', lights) | selectattr('state', 'eq', 'on') | list | count > 0 }}"
+    then:
+    - service: light.turn_off
+      data:
+        transition: 0
+      target:
+        entity_id: !input lights
+    else:
+    - service: light.turn_on
+      data:
+        brightness_pct: 100
+        kelvin: 6500
+        transition: 0
+      target:
+        entity_id: !input lights
+
+  - if:
+    - condition: template
+      value_template: "{{ counter != 'None' }}"
+    then:
+      - service: counter.set_value
+        target:
+          entity_id: "{{ counter }}"
+        data:
+          value: 0

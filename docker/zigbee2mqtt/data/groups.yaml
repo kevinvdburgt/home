@@ -1,0 +1,8 @@
+'1':
+  friendly_name: group_livingroom_light_diningtable
+  devices:
+    - 0xec1bbdfffe9ef2b5/1
+    - 0xec1bbdfffe437312/1
+    - 0xec1bbdfffe9eec68/1
+'2':
+  friendly_name: group_kitchen_light_cove

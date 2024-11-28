@@ -1,0 +1,24 @@
+esphome:
+  name: esphome-desk-jillian
+
+substitutions:
+  name: esphome-desk-jillian
+
+packages:
+  # Change the line below to reference `base.yaml` instead, if you want the
+  # base config (see next section for details)
+  tj_horner.upsy_desky: github://tjhorner/upsy-desky/firmware/stock.yaml@v2.0.0
+
+api:
+  encryption:
+    key: !secret desk_jillian_api_encryption_key
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  ap:
+    ssid: 'ESPHOME DESK JILLIAN'
+    password: !secret wifi_ap_password
+
+  use_address: !secret desk_jillian_wifi_use_address

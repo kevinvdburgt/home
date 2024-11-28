@@ -1,0 +1,37 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    hostname: homeassistant
+    image: linuxserver/homeassistant:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    ports:
+      - 8123:8123 # Home Assistant - used for internal access
+      - 5683:5683/udp # CoIoT
+      - 21064:21064 # Homekit bridge
+      - 1400:1400 # Sonos
+    volumes:
+      - ./data/:/config/
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.homeassistant.rule=Host(`homeassistant.huis.wtf`)
+      - traefik.http.services.homeassistant.loadbalancer.server.port=8123
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    restart: unless-stopped
+    networks:
+      - traefik
+      - mqtt
+      - postgres
+
+networks:
+  traefik:
+    external: true
+  mqtt:
+    external: true
+  postgres:
+    external: true
