@@ -18,7 +18,7 @@ docker/homeassistant/data/.cloud/
 docker/homeassistant/data/.config/
 docker/homeassistant/data/.storage/
 docker/homeassistant/data/custom_components/
-docker/homeassistant/data/home-assistant_v2.db
+docker/homeassistant/data/home-assistant_v2.db*
 docker/homeassistant/data/home-assistant.log*
 docker/homeassistant/data/secrets.yaml
 
