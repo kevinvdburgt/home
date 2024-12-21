@@ -4,16 +4,114 @@ homekit:
   advertise_ip: 10.10.0.2
   filter:
     include_entities:
+      # Front Yard
+      - light.frontyard_light_wall
+
+      # Livingroom
+      - light.generic_socket_aux1
+      - light.group_livingroom_light_diningtable
+      - light.livingroom_light_diningtable_1
+      - light.livingroom_light_diningtable_2
+      - light.livingroom_light_diningtable_3
+      - light.livingroom_light_ceiling
+      - light.livingroom_light_floor
+      # - binary_sensor.livingroom_motion_wall_occupancy
+      # - binary_sensor.livingroom_switch_door_backyard_contact
+      # - binary_sensor.livingroom_switch_door_inbetweenentrancehallway_contact
+      # - binary_sensor.livingroom_switch_window_contact
+
+      # Entrance hallway
+      - light.entrance_hallway_light_ceiling
+      # - binary_sensor.entrance_hallway_motion_wall_occupancy
+      # - binary_sensor.entrance_hallway_switch_door_contact
+      # - sensor.entrance_hallway_temperature_humidity_wall_humidity
+      # - sensor.entrance_hallway_temperature_humidity_wall_temperature
+
+      # Toilet
+      - light.toilet_light_ceiling
+      # - sensor.toilet_temperaturehumidity_wall_humidity
+      # - sensor.toilet_temperaturehumidity_wall_temperature
+      # - binary_sensor.toilet_switch_door_contact
+      # - binary_sensor.toilet_motion_wall_occupancy
+
+      # Technical Room
+      - light.technical_room_light_wall
+      # - sensor.technical_room_temperature_humidity_wall_humidity
+      # - sensor.technical_room_temperature_humidity_wall_temperature
+      # - binary_sensor.technical_room_switch_window_contact
+      # - binary_sensor.technical_room_switch_door_contact
+      # - binary_sensor.technical_room_motion_wall_occupancy
+
       # Office
+      - light.office_light_ceiling_up
+      - light.office_light_ceiling_down
       - light.office_light_showcase
+      # - binary_sensor.office_switch_window_kevin_contact
+      # - binary_sensor.office_switch_window_jillian_contact
+      # - binary_sensor.office_switch_door_contact
+      # - binary_sensor.office_motion_door_occupancy
+      # - binary_sensor.office_motion_desks_occupancy
 
-      # Hallway
-      # - light.attic_hallway_light_wall
+      # Inbetween Hallway
+      # - binary_sensor.inbetween_hallway_motion_wall_occupancy
+      # - binary_Sensor.inbetween_hallway_switch_door_entrance_hallway_contact
 
-      # Backyard
-      # - light.backyard_light_wall
+      # Shed
+      # - sensor.shed_temperature_humidity_wall_humidity
+      # - sensor.shed_temperature_humidity_wall_temperature
+      # - binary_sensor.shed_switch_door_contact
+
+      # Pantry
+      - light.pantry_light_wall
+      # - binary_sensor.pantry_switch_door_contact
+
+      # First Hallway
+      - light.hallway_light_ceiling
+      # - binary_sensor.stairway_1st_motion_wall_occupancy
+      # - binary_sensor.hallway_motion_wall_occupancy
+
+      # Master bedroom
+      - light.masterbedroom_light_ceiling_spot_wall
+      - light.masterbedroom_light_ceiling_spot_floor
+      - light.masterbedroom_light_ceiling_spot_door
+      - light.masterbedroom_light_ceiling_spot_bed
+      - light.masterbedroom_light_bedside_kevin
+      - light.masterbedroom_light_bedside_jillian
+      # - binary_sensor.masterbedroom_switch_window_contact
+      # - binary_sensor.masterbedroom_switch_door_contact
+      # - binary_sensor.masterbedroom_motion_wall_occupancy
+
+      # Storage
+      # - binary_sensor.loft_switch_stairs_contact
+
+      # Bedroom
+      - light.bedroom_light_ceiling
+      # - binary_sensor.bedroom_switch_door_contact
+      # - binary_sensor.bedroom_switch_window_contact
 
       # Bathroom
       - light.bathroom_light_ceiling
       # - binary_sensor.bathroom_motion_wall_occupancy
       # - binary_sensor.bathroom_switch_door_contact
+
+      # Backyard
+      - light.backyard_light_wall
+
+      # Second Hallway
+      - light.attic_hallway_light_wall
+      # - binary_sensor.attic_hallway_motion_wall_occupancy
+      # - binary_sensor.stairway_2nd_motion_wall_occupancy
+      # - sensor.attic_hallway_temperature_humidity_wall_humidity
+      # - sensor.attic_hallway_temperature_humidity_wall_temperature
+
+      # Kitchen
+      - light.kitchen_light_ceiling_1
+      - light.kitchen_light_ceiling_2
+      - light.kitchen_light_cove_1
+      - light.kitchen_light_cove_2
+      - light.kitchen_light_cove_3
+      - light.kitchen_light_cove_4
+      - light.kitchen_light_cove_5
+      - light.kitchen_light_cupboard
+      # - binary_sensor.kitchen_motion_wall_occupancy
+      # - binary_sensor.kitchen_switch_window_contact
