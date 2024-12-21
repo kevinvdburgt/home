@@ -1,0 +1,19 @@
+services:
+  postgres:
+    container_name: postgres
+    hostname: postgres
+    user: 1000:1000
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/:/var/lib/postgresql/data/
+    restart: unless-stopped
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    external: true

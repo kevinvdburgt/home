@@ -30,6 +30,9 @@ docker/loki/data/**
 docker/mqtt/data/persistence/mosquitto.db
 docker/mqtt/data/passwordfile
 
+## Postgres
+docker/postgres/data
+
 ## Traefik
 docker/traefik/data/acme.json
 docker/traefik/data/htpasswd
