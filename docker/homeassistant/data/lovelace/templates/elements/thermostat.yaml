@@ -1,0 +1,8 @@
+# lovelace_gen
+
+type: custom:better-thermostat-ui-card
+entity: {{ entity }}
+eco_temperature: 19
+disable_buttons: true
+name: {{ name }}
+disable_menu: true

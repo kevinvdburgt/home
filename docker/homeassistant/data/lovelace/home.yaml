@@ -1,0 +1,5 @@
+# lovelace_gen
+
+title: Home
+views:
+  - !include /config/lovelace/views/home/overview.yaml

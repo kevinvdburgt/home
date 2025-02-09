@@ -1,0 +1,28 @@
+open_all_blinds:
+  sequence:
+  - parallel:
+    - action: cover.set_cover_tilt_position
+      metadata: {}
+      data:
+        tilt_position: 50
+      target:
+        device_id:
+        - ba2bbede41181e4bbc2632776156bf44
+        - 4fb4b626739a0829a772765b41c868a4
+        - 43eef6a6a748854f82450717ea14a7e6
+  alias: Open all blinds
+  description: ''
+close_all_blinds:
+  sequence:
+  - parallel:
+    - action: cover.set_cover_tilt_position
+      metadata: {}
+      data:
+        tilt_position: 100
+      target:
+        device_id:
+        - ba2bbede41181e4bbc2632776156bf44
+        - 4fb4b626739a0829a772765b41c868a4
+        - 43eef6a6a748854f82450717ea14a7e6
+  alias: Close all blinds
+  description: ''

@@ -1,0 +1,6 @@
+# lovelace_gen
+
+title: Climate
+views:
+  - !include /config/lovelace/views/climate/thermostats.yaml
+  - !include /config/lovelace/views/climate/history.yaml

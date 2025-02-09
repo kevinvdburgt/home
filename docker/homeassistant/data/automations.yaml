@@ -225,3 +225,82 @@
       scenes:
       - scene.masterbedroom_smooth
       counter: counter.masterbedroom_scene_cycle_counter
+- id: '1739008860109'
+  alias: Automatic Lights
+  description: ''
+  triggers:
+  - type: opened
+    device_id: c56d924dc46735b76fd81ac726421fdc
+    entity_id: f2367835d71265297087cc3d7f94c59a
+    domain: binary_sensor
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_off
+    device_id: b5ed12fa1db921b2134765f56a823e37
+    entity_id: 8f34b66ef129cb115aaed1d8471e5170
+    domain: light
+  actions:
+  - type: turn_on
+    device_id: b5ed12fa1db921b2134765f56a823e37
+    entity_id: 8f34b66ef129cb115aaed1d8471e5170
+    domain: light
+  - wait_for_trigger:
+    - type: not_opened
+      device_id: c56d924dc46735b76fd81ac726421fdc
+      entity_id: f2367835d71265297087cc3d7f94c59a
+      domain: binary_sensor
+      trigger: device
+    timeout:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: b5ed12fa1db921b2134765f56a823e37
+    entity_id: 8f34b66ef129cb115aaed1d8471e5170
+    domain: light
+  mode: single
+- id: '1739010680430'
+  alias: Open door blinds when door opens
+  description: ''
+  triggers:
+  - type: opened
+    device_id: f6bc9d34b137b1a1ce3f51a6f5bf3790
+    entity_id: 258ea0b27c4823759a8ae78839c07c87
+    domain: binary_sensor
+    trigger: device
+  conditions: []
+  actions:
+  - action: cover.open_cover
+    metadata: {}
+    data: {}
+    target:
+      device_id: 4fb4b626739a0829a772765b41c868a4
+  mode: single
+- id: '1739011025551'
+  alias: Open all blinds on sunrise
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunrise
+    offset: 0
+  conditions: []
+  actions:
+  - action: script.open_all_blinds
+    metadata: {}
+    data: {}
+  mode: single
+- id: '1739011076135'
+  alias: Close all binds at sunset
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: 0
+  conditions: []
+  actions:
+  - action: script.close_all_blinds
+    metadata: {}
+    data: {}
+  mode: single

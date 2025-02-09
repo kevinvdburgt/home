@@ -1,0 +1,61 @@
+# lovelace_gen
+
+- type: vertical-stack
+  cards:
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Scenes
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Lights
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Switches
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Blinds
+
+- type: vertical-stack
+  cards:
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Climate
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Power
+
+- type: vertical-stack
+  cards:
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Media
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: States
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - /config/lovelace/templates/elements/title.yaml
+          - name: Automations

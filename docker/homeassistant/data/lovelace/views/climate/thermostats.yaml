@@ -1,0 +1,51 @@
+# lovelace_gen
+
+title: Overview
+path: overview
+type: custom:grid-layout
+layout:
+  grid-template-columns: 25% 25% 25% 25%
+  grid-template-rows: auto
+  grid-template-areas: |
+    "panel panel panel panel"
+  mediaquery:
+    "(max-width: 1400px)":
+      grid-template-columns: 100%
+      grid-template-areas: |
+        "panel"
+
+cards:
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.living_room
+      name: Livingroom
+
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.kitchen
+      name: Kitchen
+
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.bedroom
+      name: Liam's bedroom
+
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.master_bedroom
+      name: Kevin en Jillian's bedroom
+
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.office
+      name: Office
+
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.bathroom
+      name: Bathroom
+
+  - !include
+    - /config/lovelace/templates/elements/thermostat.yaml
+    - entity: climate.hallway
+      name: Hallway

@@ -21,6 +21,7 @@ docker/homeassistant/data/custom_components/
 docker/homeassistant/data/home-assistant_v2.db*
 docker/homeassistant/data/home-assistant.log*
 docker/homeassistant/data/secrets.yaml
+docker/homeassistant/data/www/
 
 ## Loki
 docker/loki/data/**
@@ -42,3 +43,5 @@ docker/zigbee2mqtt/data/coordinator_backup.json
 docker/zigbee2mqtt/data/database.db
 docker/zigbee2mqtt/data/secrets.yaml
 docker/zigbee2mqtt/data/state.json
+docker/zigbee2mqtt/data/configuration_backup*.yaml
+docker/zigbee2mqtt/data/migration-*.log

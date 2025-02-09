@@ -1,0 +1,45 @@
+# lovelace_gen
+
+type: conditional
+conditions:
+  - condition: numeric_state
+    entity: sensor.unavailable_entities
+    above: 0
+chip:
+  type: template
+  icon: mdi:lan-disconnect
+  icon_color: "#FF0000"
+  content: "{%raw%}{{ states('sensor.unavailable_entities') }}{%endraw%} unavailable entities"
+  tap_action:
+    action: fire-dom-event
+    browser_mod:
+      service: browser_mod.popup
+      data:
+        title: "Unavailable entities"
+        content:
+          type: vertical-stack
+          cards:
+            - type: custom:auto-entities
+              card:
+                type: vertical-stack
+              card_param: cards
+              filter:
+                template: |
+                  {% raw %}
+                  {% for entity in state_attr('sensor.unavailable_entities', 'entities') -%}
+                  {{
+                    {
+                      'type': 'custom:mushroom-template-card',
+                      'icon': 'mdi:lan-disconnect',
+                      'icon_color': '#FF0000',
+                      'primary': state_attr(entity, 'friendly_name'),
+                      'secondary': entity,
+                      'entity': entity
+                    }
+                  }},
+                  {%- endfor %}
+                  {% endraw %}
+  hold_action:
+    action: none
+  double_tap_action:
+    action: none

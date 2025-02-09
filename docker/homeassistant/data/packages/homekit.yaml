@@ -19,6 +19,7 @@ homekit:
       # - binary_sensor.livingroom_switch_door_backyard_contact
       # - binary_sensor.livingroom_switch_door_inbetweenentrancehallway_contact
       # - binary_sensor.livingroom_switch_window_contact
+      - climate.living_room
 
       # Entrance hallway
       - light.entrance_hallway_light_ceiling
@@ -51,10 +52,12 @@ homekit:
       # - binary_sensor.office_switch_door_contact
       # - binary_sensor.office_motion_door_occupancy
       # - binary_sensor.office_motion_desks_occupancy
+      - climate.office
 
       # Inbetween Hallway
       # - binary_sensor.inbetween_hallway_motion_wall_occupancy
       # - binary_Sensor.inbetween_hallway_switch_door_entrance_hallway_contact
+      - climate.hallway
 
       # Shed
       # - sensor.shed_temperature_humidity_wall_humidity
@@ -80,6 +83,7 @@ homekit:
       # - binary_sensor.masterbedroom_switch_window_contact
       # - binary_sensor.masterbedroom_switch_door_contact
       # - binary_sensor.masterbedroom_motion_wall_occupancy
+      - climate.master_bedroom
 
       # Storage
       # - binary_sensor.loft_switch_stairs_contact
@@ -88,11 +92,13 @@ homekit:
       - light.bedroom_light_ceiling
       # - binary_sensor.bedroom_switch_door_contact
       # - binary_sensor.bedroom_switch_window_contact
+      - climate.bedroom
 
       # Bathroom
       - light.bathroom_light_ceiling
       # - binary_sensor.bathroom_motion_wall_occupancy
       # - binary_sensor.bathroom_switch_door_contact
+      - climate.bathroom
 
       # Backyard
       - light.backyard_light_wall
@@ -115,3 +121,4 @@ homekit:
       - light.kitchen_light_cupboard
       # - binary_sensor.kitchen_motion_wall_occupancy
       # - binary_sensor.kitchen_switch_window_contact
+      - climate.kitchen

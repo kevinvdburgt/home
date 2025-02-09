@@ -1,0 +1,36 @@
+lovelace_gen:
+
+lovelace:
+  mode: storage
+  dashboards:
+    dashboard-home:
+      mode: yaml
+      filename: lovelace/home.yaml
+      title: Home
+      icon: mdi:home
+      show_in_sidebar: true
+      require_admin: false
+
+    dashboard-climate:
+      mode: yaml
+      filename: lovelace/climate.yaml
+      title: Climate
+      icon: mdi:thermometer
+      show_in_sidebar: true
+      require_admin: false
+
+    dashboard-areas:
+      mode: yaml
+      filename: lovelace/areas.yaml
+      title: Areas
+      icon: mdi:texture-box
+      show_in_sidebar: true
+      require_admin: false
+
+    dashboard-health:
+      mode: yaml
+      filename: lovelace/health.yaml
+      title: Health
+      icon: mdi:pulse
+      show_in_sidebar: true
+      require_admin: false

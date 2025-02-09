@@ -1,0 +1,6 @@
+# lovelace_gen
+
+title: Areas
+views:
+  - !include /config/lovelace/views/areas/areas.yaml
+  - !include /config/lovelace/views/areas/office.yaml

@@ -1,0 +1,6 @@
+# lovelace_gen
+
+title: Health
+views:
+  - !include /config/lovelace/views/health/overview.yaml
+  - !include /config/lovelace/views/health/unavailable-entities.yaml

@@ -1,0 +1,19 @@
+# lovelace_gen
+
+type: custom:mushroom-chips-card
+chips: {{ chips }}
+alignment: center
+card_mod:
+  style: |
+    ha-card > .chip-container {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    ha-card > .chip-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    ha-card > .chip-container > * {
+      flex-shrink: 0;
+    }

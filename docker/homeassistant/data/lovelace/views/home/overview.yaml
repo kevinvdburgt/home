@@ -1,0 +1,30 @@
+# lovelace_gen
+
+title: Overview
+path: overview
+type: custom:grid-layout
+layout:
+  grid-template-columns: 25% 25% 25% 25%
+  grid-template-rows: auto
+  grid-template-areas: |
+    "header header header header"
+    "panel1 panel2 panel3 panel4"
+  mediaquery:
+    "(max-width: 1400px)":
+      grid-template-columns: 100%
+      grid-template-areas: |
+        "header"
+        "panel1"
+        "panel2"
+        "panel3"
+        "panel4"
+
+cards:
+  - type: vertical-stack
+    view_layout:
+      grid-area: header
+    cards:
+      - !include
+        - /config/lovelace/templates/elements/chips.yaml
+        - chips:
+          - !include /config/lovelace/views/home/parts/chip-unavailable-entities.yaml
